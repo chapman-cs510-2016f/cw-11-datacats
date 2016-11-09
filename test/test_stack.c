@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stack.h"
+#include "../src/stack/stack.h"
 
 int main(void) {
     STACK s = new_stack();
