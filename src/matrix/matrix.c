@@ -64,6 +64,7 @@ void mset(MATRIX *m, const MINDEX row, const MINDEX col, const MVALUE v) {
   //
 }
 
+// ------------ Edited
 MVALUE mget(const MATRIX *m, const MINDEX row, const MINDEX col) {
   MVALUE n;
   n = *(m->mat + (m->cols * row) + col);
@@ -75,6 +76,7 @@ void print_value(const MVALUE v) {
   printf("%Lf", v);
 }
 
+// ------------ Edited
 void print_matrix(const MATRIX *m) {
   MINDEX maxr, maxc;
   maxr = m->rows;
@@ -83,28 +85,33 @@ void print_matrix(const MATRIX *m) {
   // print values of matrix separated by tabs
   // with each row on a separate line
   printf("Matrix (rows: %d, cols: %d) \n", maxr, maxc);
-  MVALUE n = mget(m, maxr, maxc);
-  print_value(n);
+  int i,j;
+  for (i=0; i < maxr; i++){
+    for(j=0; j < maxc; j++){
+      MVALUE n = mget(m, i, j);
+      print_value(n);
+      printf(" ");
+    }
+    printf("\n");
+  }
 }
 
-// Implementation for add_matrix goes below
+// ------------- Edited
 MATRIX add_matrix(const MATRIX *x, const MATRIX *y){
   MINDEX matr, matc;
   matr = x->rows;
   matc = x->cols;
-  int i = 0;
-  int j = 0;
 
   MATRIX z;
   z = new_matrix(matr, matc);
 
-  int num1, num2, numval;
+  int i, j, num1, num2, numval;
   for (i=0; i<matr; i++){
     for (j=0; j < matc; j++){
         num1 = mget(x, i, j);
         num2 = mget(y, i, j);
         numval = num1 + num2;
-        mset(&z, matr, matc, numval);
+        mset(&z, i, j, numval);
         }
     }
  return z;
