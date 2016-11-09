@@ -1,8 +1,8 @@
 # CS510 CW 11
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** Simrath Ratra, Andrew Nguyen_
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-11-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-11-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-11-datacats.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-11-datacats)
 
 **Due date:** 2016/11/15
 
@@ -32,7 +32,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**Although a little challenging to grasp the concept at first, this assignment was good to help us understand better the underlying coding of c, how stack works, and working with pointers, de-references, and memory addresses. It was also a good exercise to help break down the concept of matrix in terms of c coding. Implementation of the stack and matrix was fairy easy, but only after getting a better grasp of pointers and references, which I think was the goal of the assignment. **
 
 ## Honor Pledge
 
@@ -43,4 +43,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Simrath Ratra, Andrew Nguyen**
