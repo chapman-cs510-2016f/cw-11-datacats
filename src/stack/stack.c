@@ -28,3 +28,14 @@ SVALUE pop_stack(STACK *s) {
     }
     return val;
 }
+
+void print_svalue(SVALUE a) {
+    printf ("%d", a);
+}
+
+void print_stack(STACK b) {
+    STACK *b_ptr = b.head;
+    print_svalue(b_ptr.data);
+}
+
+
