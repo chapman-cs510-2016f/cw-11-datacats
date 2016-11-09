@@ -34,8 +34,12 @@ void print_svalue(SVALUE a) {
 }
 
 void print_stack(STACK b) {
-    STACK *b_ptr = b.head;
-    print_svalue(b_ptr.data);
+    print_svalue(b->data);
+    printf("\n");
+    if (b->head == NULL){
+        return;
+    }
+    print_stack(b->head);
 }
 
 
